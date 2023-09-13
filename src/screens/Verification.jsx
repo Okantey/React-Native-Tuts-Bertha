@@ -34,24 +34,24 @@ export default Verification = ({ navigation }) => {
         </Text>
       </View>
 
-      {/* chat design */}
+      {/* chat box design */}
       <View style={styles.chatBox}>
         {/* icon */}
         <View style={styles.logo}>
-          <MaterialIcons name="account-circle" size={50} color="black" />
+          <MaterialIcons name="account-circle" size={55} color="black" />
         </View>
 
         {/* chat section */}
 
         <View style={styles.chatSection}>
           <View>
-            <Text style={{ fontSize: 20 }}>Gideon IT</Text>
-            <Text>Hello this is me</Text>
+            <Text style={{ fontSize: 22, fontWeight: "bold" }}>Gideon IT</Text>
+            <Text style={{ fontSize: 16 }}>Hello this is me</Text>
           </View>
 
           {/* time */}
           <View>
-            <Text>6:00am</Text>
+            <Text style={{ fontSize: 16, fontWeight: "bold" }}>6:00am</Text>
             <FontAwesome name="check-square-o" size={24} color="black" />
           </View>
         </View>
@@ -65,15 +65,15 @@ const styles = StyleSheet.create({
     display: "flex",
     width: "100%",
     flexDirection: "row",
-    borderWidth: 1,
     padding: 5,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
   },
   logo: {
     flex: 1,
   },
   chatSection: {
-    flex: 6,
-    borderWidth: 1,
+    flex: 5,
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
