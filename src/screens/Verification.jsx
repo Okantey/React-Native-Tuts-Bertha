@@ -10,7 +10,7 @@ export default Verification = ({ navigation }) => {
       style={{
         flex: 1,
         width: "100%",
-        backgroundColor: "green",
+        backgroundColor: "white",
         paddingHorizontal: 10,
       }}
     >
@@ -26,10 +26,10 @@ export default Verification = ({ navigation }) => {
         <Ionicons
           name="chevron-back-circle-outline"
           size={40}
-          color="white"
+          color="black"
           onPress={() => navigation.goBack()}
         />
-        <Text style={{ fontSize: 20, fontWeight: "bold", color: "white" }}>
+        <Text style={{ fontSize: 20, fontWeight: "bold", color: "black" }}>
           Continue with phone
         </Text>
       </View>
