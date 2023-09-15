@@ -1,5 +1,5 @@
 import { SafeAreaView } from "react-native-safe-area-context";
-import { Text, View, StyleSheet } from "react-native";
+import { Text, View, StyleSheet, Image } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { MaterialIcons } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
@@ -38,7 +38,13 @@ export default Verification = ({ navigation }) => {
       <View style={styles.chatBox}>
         {/* icon */}
         <View style={styles.logo}>
-          <MaterialIcons name="account-circle" size={55} color="black" />
+          <Image
+            source={{
+              uri: "https://img.freepik.com/free-photo/happy-african-american-young-man-colorful-shirt-wearing-glasses-looking-camera-smiling-cheerfully_141793-108881.jpg?w=740&t=st=1694771254~exp=1694771854~hmac=9411ec8c1fdd539a1e37d41df2654ff494f0b7d8b94989f8ff475bea2b2e65ba",
+            }}
+            style={styles.image}
+          />
+          <Text style={styles.chatNumber}>2</Text>
         </View>
 
         {/* chat section */}
@@ -69,8 +75,26 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderBottomWidth: 1,
   },
+
   logo: {
     flex: 1,
+    position: "relative",
+  },
+  image: {
+    width: 50,
+    height: 50,
+    objectFit: "cover",
+    borderRadius: 100,
+  },
+  chatNumber: {
+    position: "absolute",
+    top: -2,
+    right: 2,
+    backgroundColor: "black",
+    color: "white",
+    paddingHorizontal: 6,
+    paddingVertical: 3,
+    borderRadius: 100,
   },
   chatSection: {
     flex: 5,
